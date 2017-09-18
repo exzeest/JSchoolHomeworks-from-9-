@@ -1,3 +1,5 @@
+package HomeWork_lesson_9.Source;
+
 public class Serialization {
    /*
     Сериализация: реализовать класс Student с разными полями и модификаторами.

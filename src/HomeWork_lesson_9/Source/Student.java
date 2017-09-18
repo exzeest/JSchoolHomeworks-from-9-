@@ -1,15 +1,34 @@
-public class Student {
+package HomeWork_lesson_9.Source;
+
+import java.io.Serializable;
+
+public class Student implements Serializable{
+
+    public byte version = 100;
+    private byte count = 0;
 
     private String name;
     private Integer course;
     private Integer age;
     private Gender gender;
 
-    Student ( String name, Integer age, Integer course, Gender gender ) {
+    public Student ( String name, Integer age, Integer course, Gender gender ) {
         this.name = name;
         this.age = age;
         this.course = course;
         this.gender = gender;
+    }
+
+    @Override
+    public String toString () {
+        return "Student{" +
+                "version=" + version +
+                ", count=" + count +
+                ", name='" + name + '\'' +
+                ", course=" + course +
+                ", age=" + age +
+                ", gender=" + gender +
+                '}';
     }
 
     public String getName () {
