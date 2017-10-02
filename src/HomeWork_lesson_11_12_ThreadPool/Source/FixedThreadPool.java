@@ -8,6 +8,7 @@ public class FixedThreadPool implements ThreadPool {
     private final ThreadPoolWorker[] workers;
 
     public FixedThreadPool ( int countOfThreads ) {
+        if (countOfThreads < 1) throw new IllegalArgumentException ();
         this.countOfThreads = countOfThreads;
         queue = new LinkedList ();
         workers = new ThreadPoolWorker[countOfThreads];
