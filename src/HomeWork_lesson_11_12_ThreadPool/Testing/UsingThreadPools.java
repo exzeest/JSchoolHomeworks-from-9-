@@ -3,10 +3,7 @@ package HomeWork_lesson_11_12_ThreadPool.Testing;
 import HomeWork_lesson_11_12_ThreadPool.Source.FixedThreadPool;
 import HomeWork_lesson_11_12_ThreadPool.Source.ThreadPool;
 
-import java.sql.Time;
-import java.util.Random;
-
-public class TestingThreadPools {
+public class UsingThreadPools {
     public static void main ( String[] args ) {
         ThreadPool thrpool = new FixedThreadPool (5);
         thrpool.start ();
